@@ -12,7 +12,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   jsEngine: "hermes",
   scheme: "acme",
   splash: {
-    image: "./assets/splash.png",
+    image: "./assets/tree.png",
     resizeMode: "contain",
     backgroundColor: "#ffffff",
   },

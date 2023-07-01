@@ -8,6 +8,7 @@ import {
 } from "@expo-google-fonts/poppins";
 import { useQuery } from "@tanstack/react-query";
 import * as ExpoStore from "expo-secure-store";
+import withQueryClient from "../src/components/withQueryClient";
 
 // Prevent hiding the splash screen
 SplashScreen.preventAutoHideAsync();
@@ -19,7 +20,7 @@ async function getOnboarding() {
   return false;
 }
 
-export default function RootLayout() {
+function RootLayout() {
   // Load the font `Poppins_400Regular`
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -50,11 +51,12 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack
-      initialRouteName={onboarded ? "index" : "onboard"}
-      screenOptions={{ orientation: "all" }}
-    />
+    <Stack initialRouteName="onboard" screenOptions={{ orientation: "all" }}>
+      <Stack.Screen name="index" redirect={!onboarded} />
+      <Stack.Screen name="onboard" />
+    </Stack>
   );
 }
 
+export default withQueryClient(RootLayout);
 export { ErrorBoundary } from "expo-router";
