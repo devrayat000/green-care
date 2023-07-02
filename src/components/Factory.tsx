@@ -1,4 +1,4 @@
 import { Image } from "expo-image";
-import { styled } from "./core";
+import { Factory } from "native-base";
 
-export const ExpoImage = styled(Image, {});
+export const ExpoImage = Factory(Image);

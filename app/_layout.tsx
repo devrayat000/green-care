@@ -3,12 +3,19 @@ import { Stack, SplashScreen } from "expo-router";
 import {
   useFonts,
   Poppins_400Regular,
-  Poppins_600SemiBold,
+  Poppins_500Medium,
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 import { useQuery } from "@tanstack/react-query";
 import * as ExpoStore from "expo-secure-store";
 import withQueryClient from "../src/components/withQueryClient";
+
+export const unstable_settings = {
+  initialRouteName: "index",
+  onboard: {
+    initialRouteName: "start",
+  },
+};
 
 // Prevent hiding the splash screen
 SplashScreen.preventAutoHideAsync();
@@ -20,11 +27,11 @@ async function getOnboarding() {
   return false;
 }
 
-function RootLayout() {
+function RootLayout(props: any) {
   // Load the font `Poppins_400Regular`
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
-    Poppins_600SemiBold,
+    Poppins_500Medium,
     Poppins_700Bold,
   });
   const { data: onboarded, isFetched } = useQuery(
@@ -51,9 +58,12 @@ function RootLayout() {
   }
 
   return (
-    <Stack initialRouteName="onboard" screenOptions={{ orientation: "all" }}>
+    <Stack
+      initialRouteName="(onboard)/start"
+      screenOptions={{ orientation: "all" }}
+    >
       <Stack.Screen name="index" redirect={!onboarded} />
-      <Stack.Screen name="onboard" />
+      <Stack.Screen name="(onboard)/start" />
     </Stack>
   );
 }

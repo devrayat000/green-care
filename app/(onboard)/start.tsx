@@ -3,8 +3,8 @@ import * as ExpoStore from "expo-secure-store";
 import { Stack, useRouter } from "expo-router";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 
-import { ExpoImage } from "../src/components/Factory";
-import { Button, VStack } from "../src/components";
+import { ExpoImage } from "../../src/components/Factory";
+import { Box, Button, Text, VStack } from "native-base";
 
 async function setOnboard() {
   if (await ExpoStore.isAvailableAsync()) {
@@ -26,23 +26,31 @@ export default function OnboardingPage() {
   return (
     <SafeAreaView>
       <Stack.Screen options={{ headerShown: false }} />
-      <VStack h="$full" p="$6" alignItems="center">
+      <VStack h="full" px="6" py="8" alignItems="center">
         <ExpoImage
-          source={require("../assets/tree.png")}
+          source={require("../../assets/tree.png")}
           contentFit="contain"
-          w="$full"
+          w="full"
           flex={1}
-          // alignSelf="center"
         />
-        <Button
-          rounded="$full"
-          w="$full"
-          variant="solid"
-          bgColor="$success500"
-          onPress={() => onboard()}
-          // justifyse="flex-end"
+        <Text
+          fontWeight="medium"
+          fontSize="3xl"
+          color="gray.700"
+          textAlign="center"
+          w="full"
         >
-          <Button.Text>Get Started</Button.Text>
+          Welcome, and all aboard
+        </Text>
+        <Box h="8" />
+        <Button
+          rounded="full"
+          w="full"
+          variant="solid"
+          bgColor="success.500"
+          onPress={() => onboard()}
+        >
+          Get Started
         </Button>
       </VStack>
     </SafeAreaView>

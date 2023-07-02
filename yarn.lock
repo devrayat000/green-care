@@ -52,7 +52,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.13.16, @babel/core@npm:^7.20.0, @babel/core@npm:^7.20.5":
+"@babel/core@npm:^7.13.16, @babel/core@npm:^7.20.0":
   version: 7.22.5
   resolution: "@babel/core@npm:7.22.5"
   dependencies:
@@ -75,7 +75,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.20.0, @babel/generator@npm:^7.20.5, @babel/generator@npm:^7.22.5":
+"@babel/generator@npm:^7.20.0, @babel/generator@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/generator@npm:7.22.5"
   dependencies:
@@ -354,7 +354,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.13.16, @babel/parser@npm:^7.14.0, @babel/parser@npm:^7.20.0, @babel/parser@npm:^7.20.5, @babel/parser@npm:^7.22.5":
+"@babel/parser@npm:^7.13.16, @babel/parser@npm:^7.14.0, @babel/parser@npm:^7.20.0, @babel/parser@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/parser@npm:7.22.5"
   bin:
@@ -1376,7 +1376,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-typescript@npm:^7.20.2, @babel/plugin-transform-typescript@npm:^7.22.5, @babel/plugin-transform-typescript@npm:^7.5.0":
+"@babel/plugin-transform-typescript@npm:^7.22.5, @babel/plugin-transform-typescript@npm:^7.5.0":
   version: 7.22.5
   resolution: "@babel/plugin-transform-typescript@npm:7.22.5"
   dependencies:
@@ -1555,7 +1555,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:^7.13.0, @babel/preset-typescript@npm:^7.18.6":
+"@babel/preset-typescript@npm:^7.13.0":
   version: 7.22.5
   resolution: "@babel/preset-typescript@npm:7.22.5"
   dependencies:
@@ -1612,7 +1612,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.20.0, @babel/traverse@npm:^7.20.5, @babel/traverse@npm:^7.22.5":
+"@babel/traverse@npm:^7.20.0, @babel/traverse@npm:^7.22.5":
   version: 7.22.5
   resolution: "@babel/traverse@npm:7.22.5"
   dependencies:
@@ -1948,13 +1948,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/html-elements@npm:latest":
-  version: 0.4.2
-  resolution: "@expo/html-elements@npm:0.4.2"
-  checksum: 4a262ca128e3ba96334b4b7e698e168a4156699897574e24bb43b8d7d556f8d332a377c721bd599ec1d87dcdd7a638653da5ce4f87a9382c2dc09b787dcf3cb5
-  languageName: node
-  linkType: hard
-
 "@expo/image-utils@npm:0.3.22":
   version: 0.3.22
   resolution: "@expo/image-utils@npm:0.3.22"
@@ -2228,212 +2221,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gluestack-style/animation-plugin@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "@gluestack-style/animation-plugin@npm:0.1.7"
-  dependencies:
-    "@legendapp/motion": ^2.2.0
-  checksum: ea2b2dfadfefaf6b64a66e93cea7be696e119820e465b29cadca689991700d6b37c4cc766d7cd424d2fafb2ea65f0d74b74e3bc932aa2c019a9a26fb8640cb52
-  languageName: node
-  linkType: hard
-
-"@gluestack-style/babel-plugin-styled-resolver@npm:^0.1.14":
-  version: 0.1.14
-  resolution: "@gluestack-style/babel-plugin-styled-resolver@npm:0.1.14"
-  dependencies:
-    "@babel/core": ^7.20.5
-    "@babel/generator": ^7.20.5
-    "@babel/parser": ^7.20.5
-    "@babel/plugin-transform-typescript": ^7.20.2
-    "@babel/preset-typescript": ^7.18.6
-    "@babel/traverse": ^7.20.5
-    lodash.merge: ^4.6.2
-  peerDependencies:
-    "@gluestack-style/react": ^0.1.11
-  checksum: f65900d5dc70447a2412fad1c9dd94ba581184597ad426b415b130b8e447df5ec51b31350f3b1b9676ccd47ee24381e0e2e70be7655f41bf594fc7ad08985eef
-  languageName: node
-  linkType: hard
-
-"@gluestack-style/react@npm:^0.1.29":
-  version: 0.1.29
-  resolution: "@gluestack-style/react@npm:0.1.29"
-  dependencies:
-    inline-style-prefixer: ^6.0.1
-    normalize-css-color: ^1.0.2
-  checksum: abf9738e080b254c018bdbd8167af4ca3a6a6c4b7d7414225963a3c6d879954b99edc2d57a36ae21a6613cd6af73936b265a7720be9f8641727af8994a1ad4e8
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/button@npm:latest":
-  version: 0.1.20
-  resolution: "@gluestack-ui/button@npm:0.1.20"
-  dependencies:
-    "@gluestack-ui/utils": 0.1.6
-    "@react-native-aria/focus": ^0.2.8
-    "@react-native-aria/interactions": ^0.2.10
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 083202d82f53c1e419326611a526db316d495620c822964f12fd9d5c5e40b013389f2cc45fcd1f40264783ee4cedf8bb5125705c5fe0ce5fef068fde3d72ddab
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/hooks@npm:^0.1.2, @gluestack-ui/hooks@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "@gluestack-ui/hooks@npm:0.1.3"
-  dependencies:
-    "@react-native-aria/focus": ^0.2.7
-    react-native-svg: 13.4.0
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 5d9d7c3dbc44bf1c700cb65f1d50a2b4d7fe6e6c27cb805e611ee856dc0d502fcb01dc5596aff2864819da9e85316568d9ee31fcb1aebb26c2864411c2c0ed77
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/hstack@npm:latest":
-  version: 0.1.8
-  resolution: "@gluestack-ui/hstack@npm:0.1.8"
-  dependencies:
-    "@gluestack-ui/utils": ^0.1.6
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 4c11928d2aac2c84c7093c02050752c6a2044d7bff5752766bdb3ce0e110cd8d3840a0c519e29f970ea2022507c741bd7fc4ebacd53c8752ab3cc55315a8fad5
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/overlay@npm:^0.1.7, @gluestack-ui/overlay@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "@gluestack-ui/overlay@npm:0.1.8"
-  dependencies:
-    "@react-native-aria/focus": ^0.2.7
-    "@react-native-aria/interactions": ^0.2.10
-    "@react-native-aria/overlays": ^0.3.7
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 2fee4f9cec82161ca106cd6f1d0feb35090ca78724c543f550db6325008ba070a16b57f42def4e637b439e81ac70325b77260e652cedb2e400170a29e03b224f
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/pressable@npm:latest":
-  version: 0.1.9
-  resolution: "@gluestack-ui/pressable@npm:0.1.9"
-  dependencies:
-    "@gluestack-ui/utils": ^0.1.6
-    "@react-native-aria/focus": ^0.2.8
-    "@react-native-aria/interactions": ^0.2.10
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 5871236fa794a753fd4b4de1b589f4dd2cb5e2124b1d3a8313d8e3996959dd6b35e0d1b75b13a608896bb2b72534d2cba864a389add2a0dd2faf36fc41313659
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/provider@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "@gluestack-ui/provider@npm:0.1.6"
-  dependencies:
-    "@gluestack-ui/overlay": ^0.1.8
-    "@gluestack-ui/toast": ^0.1.11
-    "@react-native-aria/interactions": ^0.2.10
-    tsconfig: 7
-    typescript: ^4.9.4
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 02945655a3711499140a69267b9364f12ee534073cb08c1d0493eb6b050d1edef64536fe059ea83ef544af8fed6ff467925d6cd06832fbd097933a19f776bcf4
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/react-native-aria@npm:^0.1.4":
-  version: 0.1.4
-  resolution: "@gluestack-ui/react-native-aria@npm:0.1.4"
-  dependencies:
-    "@react-native-aria/focus": ^0.2.7
-    react-native-svg: 13.4.0
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 7014b8efd7afa1532a913b242ac41eb539c75625709cac09d536c715f9557fb38ddcbbbe0659934f6f2d7ffcdfe2b4e4245bdb267c36cb104bfcf273d1e26251
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/toast@npm:^0.1.11":
-  version: 0.1.11
-  resolution: "@gluestack-ui/toast@npm:0.1.11"
-  dependencies:
-    "@gluestack-ui/hooks": ^0.1.2
-    "@gluestack-ui/overlay": ^0.1.7
-    "@gluestack-ui/transitions": ^0.1.8
-    "@gluestack-ui/utils": ^0.1.5
-    "@react-native-aria/focus": ^0.2.7
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 409f54e8ab11485f45765d0aa39e7d9e75bf78b3cc29ef7746a3ad3a2f88fda7823a77a4286b2f0015c1f295a9e494fb9b20d0d637775ab8521e22c0d90a2f81
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/tooltip@npm:latest":
-  version: 0.1.11
-  resolution: "@gluestack-ui/tooltip@npm:0.1.11"
-  dependencies:
-    "@gluestack-ui/hooks": ^0.1.3
-    "@gluestack-ui/overlay": ^0.1.8
-    "@gluestack-ui/utils": ^0.1.6
-    "@react-native-aria/focus": ^0.2.7
-    "@react-native-aria/interactions": ^0.2.10
-    "@react-native-aria/overlays": 0.3.7
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 2193aa3760d33cea211e01166b12e76259147b51530de0bf02b147bebb5ca22c7ab685f8ecae9d721cb430936d016747b32250c8c501725b902982635c890add
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/transitions@npm:^0.1.8":
-  version: 0.1.9
-  resolution: "@gluestack-ui/transitions@npm:0.1.9"
-  dependencies:
-    "@gluestack-ui/overlay": ^0.1.8
-    "@gluestack-ui/react-native-aria": ^0.1.4
-    "@gluestack-ui/utils": ^0.1.6
-    "@react-native-aria/focus": ^0.2.7
-    react-native-svg: 13.4.0
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: dd0ced6bc0b40d1afa6f58330c88dad1b2753239f5efd1bd5dd2070e02a4788d19527b9eb889a49a836be66c5083c2282a926efa5997fce22893e70c4a5965cd
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/utils@npm:0.1.6, @gluestack-ui/utils@npm:^0.1.5, @gluestack-ui/utils@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "@gluestack-ui/utils@npm:0.1.6"
-  dependencies:
-    "@react-native-aria/focus": ^0.2.7
-    react-native-svg: 13.4.0
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: e6c363f4af43a430eb16d7eb5d80c12481e69dfced273a93ffb1b0eccc661c3068b609eb245c345df43d656f989f9827007feec506aaf2e51ac130f822deaa27
-  languageName: node
-  linkType: hard
-
-"@gluestack-ui/vstack@npm:latest":
-  version: 0.1.9
-  resolution: "@gluestack-ui/vstack@npm:0.1.9"
-  dependencies:
-    "@gluestack-ui/utils": ^0.1.5
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: ed2d799235ac483e5bb50fe319c8f49d1434eaf4888a3ee01fb7c2e0f855ddaf57e798a9cd8e1e8674ce8cebedf4ba5646a7ba6b1764b11f9005834a279582f1
-  languageName: node
-  linkType: hard
-
 "@graphql-typed-document-node/core@npm:^3.1.0":
   version: 3.2.0
   resolution: "@graphql-typed-document-node/core@npm:3.2.0"
@@ -2657,7 +2444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@legendapp/motion@npm:^2.2.0, @legendapp/motion@npm:latest":
+"@legendapp/motion@npm:latest":
   version: 2.2.1
   resolution: "@legendapp/motion@npm:2.2.1"
   dependencies:
@@ -3157,7 +2944,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-aria/focus@npm:^0.2.6, @react-native-aria/focus@npm:^0.2.7, @react-native-aria/focus@npm:^0.2.8":
+"@react-native-aria/focus@npm:^0.2.6":
   version: 0.2.8
   resolution: "@react-native-aria/focus@npm:0.2.8"
   dependencies:
@@ -3169,7 +2956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-aria/interactions@npm:^0.2.10, @react-native-aria/interactions@npm:^0.2.2, @react-native-aria/interactions@npm:^0.2.3, @react-native-aria/interactions@npm:^0.2.7":
+"@react-native-aria/interactions@npm:^0.2.2, @react-native-aria/interactions@npm:^0.2.3, @react-native-aria/interactions@npm:^0.2.7":
   version: 0.2.10
   resolution: "@react-native-aria/interactions@npm:0.2.10"
   dependencies:
@@ -3203,7 +2990,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-aria/overlays@npm:0.3.7, @react-native-aria/overlays@npm:^0.3.3, @react-native-aria/overlays@npm:^0.3.7":
+"@react-native-aria/overlays@npm:^0.3.3":
   version: 0.3.7
   resolution: "@react-native-aria/overlays@npm:0.3.7"
   dependencies:
@@ -4362,20 +4149,6 @@ __metadata:
   version: 2.0.1
   resolution: "@types/stack-utils@npm:2.0.1"
   checksum: 205fdbe3326b7046d7eaf5e494d8084f2659086a266f3f9cf00bccc549c8e36e407f88168ad4383c8b07099957ad669f75f2532ed4bc70be2b037330f7bae019
-  languageName: node
-  linkType: hard
-
-"@types/strip-bom@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@types/strip-bom@npm:3.0.0"
-  checksum: cb165d0c2ce6abbef95506ebee25be02bd453600ef1792dc1754236e5d6f9c830d52bdb85978d0b08ea1f36b96a61235ac5ad99e0f4c2767fb4ea004e141d2df
-  languageName: node
-  linkType: hard
-
-"@types/strip-json-comments@npm:0.0.30":
-  version: 0.0.30
-  resolution: "@types/strip-json-comments@npm:0.0.30"
-  checksum: 829ddd389645073f347c5b1924a8c34b8813af29756576e511c46f40e218193cf93ccbade62661d47fc70f707e98f410331729b8c20edfcb2e807d51df1ad4b7
   languageName: node
   linkType: hard
 
@@ -7166,18 +6939,6 @@ __metadata:
   dependencies:
     "@babel/core": ^7.20.0
     "@expo-google-fonts/poppins": ^0.2.3
-    "@expo/html-elements": latest
-    "@gluestack-style/animation-plugin": ^0.1.7
-    "@gluestack-style/babel-plugin-styled-resolver": ^0.1.14
-    "@gluestack-style/react": ^0.1.29
-    "@gluestack-ui/button": latest
-    "@gluestack-ui/hstack": latest
-    "@gluestack-ui/overlay": ^0.1.8
-    "@gluestack-ui/pressable": latest
-    "@gluestack-ui/provider": ^0.1.6
-    "@gluestack-ui/toast": ^0.1.11
-    "@gluestack-ui/tooltip": latest
-    "@gluestack-ui/vstack": latest
     "@legendapp/motion": latest
     "@react-native-community/netinfo": 9.3.7
     "@shopify/flash-list": 1.4.0
@@ -9580,13 +9341,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"normalize-css-color@npm:^1.0.2":
-  version: 1.0.2
-  resolution: "normalize-css-color@npm:1.0.2"
-  checksum: 7433dc995a8d27c9384059ef0b52ceef47f4fab1bab55f1f085058b27e7472466ce321f46391fc85b6851db5212b9bd2bf55f5dc361da01a8a8cf4c360f69dab
-  languageName: node
-  linkType: hard
-
 "normalize-path@npm:^3.0.0":
   version: 3.0.0
   resolution: "normalize-path@npm:3.0.0"
@@ -11470,13 +11224,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-bom@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "strip-bom@npm:3.0.0"
-  checksum: 8d50ff27b7ebe5ecc78f1fe1e00fcdff7af014e73cf724b46fb81ef889eeb1015fc5184b64e81a2efe002180f3ba431bdd77e300da5c6685d702780fbf0c8d5b
-  languageName: node
-  linkType: hard
-
 "strip-eof@npm:^1.0.0":
   version: 1.0.0
   resolution: "strip-eof@npm:1.0.0"
@@ -11484,7 +11231,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"strip-json-comments@npm:^2.0.0, strip-json-comments@npm:~2.0.1":
+"strip-json-comments@npm:~2.0.1":
   version: 2.0.1
   resolution: "strip-json-comments@npm:2.0.1"
   checksum: 1074ccb63270d32ca28edfb0a281c96b94dc679077828135141f27d52a5a398ef5e78bcf22809d23cadc2b81dfbe345eb5fd8699b385c8b1128907dec4a7d1e1
@@ -11834,18 +11581,6 @@ __metadata:
   version: 0.0.5
   resolution: "ts-object-utils@npm:0.0.5"
   checksum: 83c48fbdaba392fb2c01cea53b267ed5538d2bb44fc6c3eecc10bcfabc1780bfa6ec8569b52bbf0140d9b521d9049d5f15884e12286918244d463d854dbc73cb
-  languageName: node
-  linkType: hard
-
-"tsconfig@npm:7":
-  version: 7.0.0
-  resolution: "tsconfig@npm:7.0.0"
-  dependencies:
-    "@types/strip-bom": ^3.0.0
-    "@types/strip-json-comments": 0.0.30
-    strip-bom: ^3.0.0
-    strip-json-comments: ^2.0.0
-  checksum: 8bce05e93c673defd56d93d83d4055e49651d3947c076339c4bc15d47b7eb5029bed194087e568764213a2e4bf45c477ba9f4da16adfd92cd901af7c09e4517e
   languageName: node
   linkType: hard
 

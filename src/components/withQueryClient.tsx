@@ -2,10 +2,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import useOnlineManager from "../hooks/useOnlineManager";
 import useRefreshOnFocus from "../hooks/useRefreshOnFocus";
-import { GluestackUIProvider } from "./core";
-import { config } from "../../gluestack-ui.config";
+import { NativeBaseProvider, extendTheme } from "native-base";
 
-const queryClient = new QueryClient({
+export const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       cacheTime: 1000 * 3_600,
@@ -16,6 +15,27 @@ const queryClient = new QueryClient({
   },
 });
 
+export const theme = extendTheme({
+  fontConfig: {
+    Poppins: {
+      400: {
+        normal: "Poppins_400Regular",
+      },
+      500: {
+        normal: "Poppins_500Medium",
+      },
+      700: {
+        normal: "Poppins_700Bold",
+      },
+    },
+  },
+  fonts: {
+    heading: "Poppins",
+    body: "Poppins",
+    mono: "Poppins",
+  },
+});
+
 export default function withQueryClient<T>(Component: React.ComponentType<T>) {
   return function WrapperComponent(props: T) {
     useOnlineManager();
@@ -23,9 +43,13 @@ export default function withQueryClient<T>(Component: React.ComponentType<T>) {
 
     return (
       <QueryClientProvider client={queryClient}>
-        <GluestackUIProvider config={config.theme}>
+        <NativeBaseProvider
+          theme={theme}
+          config={{ strictMode: "off" }}
+          isSSR={false}
+        >
           <Component {...props} />
-        </GluestackUIProvider>
+        </NativeBaseProvider>
       </QueryClientProvider>
     );
   };
